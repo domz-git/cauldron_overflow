@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/cauldron_overflow.iml" filepath="$PROJECT_DIR$/.idea/cauldron_overflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/triangle_calculator.iml" filepath="$PROJECT_DIR$/.idea/triangle_calculator.iml" />
     </modules>
   </component>
 </project>
