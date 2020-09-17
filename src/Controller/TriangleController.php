@@ -4,13 +4,12 @@ namespace App\Controller;
 
 use App\Entity\Triangle;
 use App\Repository\TriangleRepository;
+use App\Services\GeometryCalculator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
-/**
- * @Route("/triangle", name="triangle")
- */
+
 class TriangleController extends AbstractController
 {
 
@@ -35,51 +34,30 @@ class TriangleController extends AbstractController
             'controller_name' => 'TriangleController',
         ]);
     }
+
     /**
      * @Route("/triangles", name="triangles")
+     * @param GeometryCalculator $geometryCalculator
+     * @return Response
      */
-    public function GeometryCalculator()
+    public function DisplayResults(GeometryCalculator $geometryCalculator)
     {
-        $connect = mysqli_connect("localhost","root","","triangle_db");
-        $sql = "SELECT * FROM triangle";
-        $result = mysqli_query($connect, $sql);
-        $json_array = array();
-        $A = array();
-        $B = array();
-        $C = array();
-        $triangle = new Triangle();
-        $i=0;
-        $circsum=0;
-        $surfsum=0;
+        $finalCirc = $geometryCalculator->calculateCirc();
+        $finalSurf = $geometryCalculator->calculateSurf();
+        $finalNum = $geometryCalculator->numOfTri();
 
-        while($row=mysqli_fetch_assoc($result)){
 
-            $json_array[] = $row;
-            $A[] = "" . $row['side_a'] . "";
-            $B[] = "" . $row['side_b'] . "";
-            $C[] = "" . $row['side_c'] . "";
-
-            $circ = $triangle->circumference($A[$i],$B[$i],$C[$i]);
-            $circsum = $circsum + $circ;
-            $surf = $triangle->surface($A[$i],$B[$i],$C[$i]);
-            $surfsum = $surfsum + $surf;
-            $i++;
-        }
-        echo json_encode($json_array);
-        echo json_encode($A);
-        echo json_encode($B);
-        echo json_encode($C);
         echo "<br>";
-        echo '"number_of_triangles": ',json_encode($i),"<br>";
-        echo '"total_surface": ',json_encode($surfsum),"<br>";
-        echo '"total_circumference": ',json_encode($circsum),"<br>";
+        echo '"number_of_triangles": ',json_encode($finalNum),"<br>";
+        echo '"total_surface": ',json_encode($finalSurf),"<br>";
+        echo '"total_circumference": ',json_encode($finalCirc),"<br>";
         return $this->render('triangle/index.html.twig', [
             'controller_name' => 'TriangleController',
         ]);
     }
 
     /**
-     * @Route("/{slug_a}/{slug_b}/{slug_c}")
+     * @Route("/triangle/{slug_a}/{slug_b}/{slug_c}")
      * @param Request $request
      * @param $slug_a
      * @param $slug_b

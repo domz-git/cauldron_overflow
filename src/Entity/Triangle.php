@@ -20,17 +20,17 @@ class Triangle
     /**
      * @ORM\Column(type="float")
      */
-    private $SideA;
+    public $SideA;
 
     /**
      * @ORM\Column(type="float")
      */
-    private $SideB;
+    public $SideB;
 
     /**
      * @ORM\Column(type="float")
      */
-    private $SideC;
+    public $SideC;
 
     public function getId(): ?int
     {

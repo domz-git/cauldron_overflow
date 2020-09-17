@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46dea562-3411-457e-a152-ef55ab2aa81e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cauldron_overflow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/triangle_calculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TriangleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TriangleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Triangle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Triangle.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +142,8 @@
       <workItem from="1600271861842" duration="1625000" />
       <workItem from="1600273528532" duration="7333000" />
       <workItem from="1600282522437" duration="21568000" />
+      <workItem from="1600341200323" duration="552000" />
+      <workItem from="1600351852204" duration="7146000" />
     </task>
     <servers />
   </component>
@@ -164,6 +160,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Intentions" timestamp="1600299803151">
@@ -178,6 +175,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600293452737" />
+    <state x="690" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600357692477">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600357692477" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1600341196167">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -190,10 +191,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="529" y="174" key="SettingsEditor/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600275973780" />
-    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600300775542">
+    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600357250345">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600300775542" />
+    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600357250345" />
     <state x="677" y="296" key="refactoring.ChangeSignatureDialog" timestamp="1600306674970">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
