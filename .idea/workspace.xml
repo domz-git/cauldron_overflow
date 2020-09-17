@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="46dea562-3411-457e-a152-ef55ab2aa81e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/TriangleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TriangleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Triangle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Triangle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/GeometryCalculator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/GeometryCalculator.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +144,7 @@
       <workItem from="1600273528532" duration="7333000" />
       <workItem from="1600282522437" duration="21568000" />
       <workItem from="1600341200323" duration="552000" />
-      <workItem from="1600351852204" duration="7146000" />
+      <workItem from="1600351852204" duration="15154000" />
     </task>
     <servers />
   </component>
@@ -191,14 +192,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="529" y="174" key="SettingsEditor/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600275973780" />
-    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600357250345">
+    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600368596954">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600357250345" />
-    <state x="677" y="296" key="refactoring.ChangeSignatureDialog" timestamp="1600306674970">
+    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600368596954" />
+    <state x="677" y="296" key="refactoring.ChangeSignatureDialog" timestamp="1600368690235">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="677" y="296" key="refactoring.ChangeSignatureDialog/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600306674970" />
+    <state x="677" y="296" key="refactoring.ChangeSignatureDialog/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1600368690235" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600299774736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

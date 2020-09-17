@@ -4,13 +4,19 @@ Namespace App\Services;
 
 use App\Entity\Triangle;
 use App\Repository\TriangleRepository;
-use Symfony\Component\HttpFoundation\Response;
+use Psr\Container\ContainerInterface;
 
 
 class GeometryCalculator {
-    public function numOfTri(TriangleRepository $triangleRepository){
+
+    public $trirep;
+    public function __construct(TriangleRepository $triangleRepository){
+        $this->trirep = $triangleRepository;
+    }
+
+    public function numOfTri(){
         $i=0;
-        $triangles = $triangleRepository->findAll();
+        $triangles = $this->trirep->findAll();
         foreach ($triangles as $var => $value) {
             $i++;
         }
@@ -18,13 +24,10 @@ class GeometryCalculator {
         return($i);
     }
 
-    /**
-     * @param TriangleRepository $triangleRepository
-     * @return float|int|Response
-     */
-    public function calculateCirc(TriangleRepository $triangleRepository){
+
+    public function calculateCirc(){
         $circsum=0;
-        $triangles = $triangleRepository->findAll();
+        $triangles = $this->trirep->findAll();
         $triangle = new Triangle();
         foreach ($triangles as $var => $value) {
             $circ = $triangle->circumference($value->SideA, $value->SideB, $value->SideC);
@@ -33,13 +36,11 @@ class GeometryCalculator {
 
         return($circsum);
     }
-    /**
-     * @param TriangleRepository $triangleRepository
-     * @return float|int|Response
-     */
-    public function calculateSurf(TriangleRepository $triangleRepository){
+
+
+    public function calculateSurf(){
         $surfsum=0;
-        $triangles = $triangleRepository->findAll();
+        $triangles = $this->trirep->findAll();
         $triangle = new Triangle();
         foreach ($triangles as $var => $value) {
             $surf = $triangle->surface($value->SideA, $value->SideB, $value->SideC);

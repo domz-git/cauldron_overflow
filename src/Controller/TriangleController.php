@@ -14,7 +14,7 @@ class TriangleController extends AbstractController
 {
 
     /**
-     * @Route("/", name="index")
+     * @Route("/general", name="index")
      * @param TriangleRepository $triangleRepository
      * @return Response
      */
